@@ -1,0 +1,502 @@
+@font-face{
+    font-family: DIN-Regular;
+    src: url(./fonts/DIN-Regular.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeef7;
+    font-family: DIN-Regular;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.app{
+    width: 1729px;
+    margin: 62px auto 72px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 110px 340px 679px 255px 345px;
+    background-color: #fff;
+    width: 100%;
+    height: 93px;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #eaebf0;
+}
+nav > div {
+    display: inline-block;
+    box-sizing: border-box;
+    align-self: center;
+}
+nav .logo {
+    padding: 32px 39px 28px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-right: 1px solid #eaebf0;
+    cursor: pointer;
+}
+nav .left .search{
+    margin-left: 40px;
+    margin-right: 15px;
+    transform: translateY(7px);
+}
+nav .left input{
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+nav .left input::placeholder{    
+    color: #aab8c7;
+}
+nav .middle{
+    justify-self: center;
+}
+nav .middle li{
+    display: inline-block;
+    margin-right: 40px;
+}
+nav .middle li a{
+    text-decoration: none;
+    color: #2e3948;
+    font-size: 16px;
+    padding-bottom: 31px;
+}
+nav .middle li a:hover{
+    border-bottom: 3px solid #f3333e;
+}
+nav .middle li img{
+    margin-left: 10px;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+nav .right{
+    justify-self: center;
+
+}
+nav .right li{
+    display: inline-block;
+    position: relative;
+}
+nav .right li .redDot{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+nav .right li span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+nav .right li:not(:last-of-type){
+    margin-right: 40px;
+}
+nav .profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-left: 1px solid #eaebf0;
+    height: 100%;
+}
+nav .profile h4{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    cursor: pointer;
+    align-self: center;
+
+}
+nav .profile h4 span{
+    font-size: 14px;
+    color: #a9b7c6;
+}
+nav .profile h4 span img{
+    margin-right: 5px;
+    margin-top: 5px;
+    vertical-align: top;
+}
+nav .profile .profileFoto{
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+nav .profile .profileFoto .arrow{
+    position: absolute;
+    right: 43px;
+    top: 50%;
+}
+nav .profile .profileFoto .photo{
+    margin-top: 20px;
+}
+.main {
+    height: 900px;
+    background-color: #f8f9fb;
+    display: grid;
+    grid-template-columns: 1384px 345px;
+    box-sizing: border-box;
+}
+
+.main .calendarBody .actionBar{
+    height: 130px;
+    display: grid;
+    grid-template-columns: 200px 984px 200px;
+}
+.main .calendarBody .actionBar h3{
+    font-size: 36px;
+    margin-left: 17px;
+    margin-top: 45px;
+}
+.main .calendarBody .actionBar .actionMenu{
+    align-self: center;
+    justify-self: center;
+}
+.main .calendarBody .actionBar .actionMenu ul{
+    background-color: #fff;
+    padding: 11px 0px;
+    border-radius: 28px;
+}
+.main .calendarBody .actionBar .actionMenu li{
+    display: inline-block;
+}
+.main .calendarBody .actionBar .actionMenu li a{
+    text-decoration: none;
+    color: #3d5477;
+    padding: 11px 47px;
+    border-radius: 28px;
+}
+.main .calendarBody .actionBar .actionMenu li a:hover{
+    background: linear-gradient(130deg, #ffe53b 0%, #f3333e 100%);
+    color: #fff;
+}
+.main .calendarBody .actionBar .actionBtn{
+    padding: 10px 35px;
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+    color: #506584;
+    background-color: #ebebf5;
+    border-radius: 28px;
+}
+.main .calendar{
+    padding: 0px 20px 15px;
+    height: 770px;
+    box-sizing: border-box;
+}
+.main .calendar .calendarHeader{
+    height: 48px;
+    border: 1px solid #eaebf0;
+    display: grid;
+    width: 1340px;
+    transform: translateX(2px);
+    grid-template-columns: 574px 764px;
+}
+.main .calendar .calendarHeader ul{
+    margin: 13px 0px 0px;
+}
+.main .calendar .calendarHeader ul.gridListMenu{
+    margin-left: 18px;
+}
+.main .calendar .calendarHeader ul.date{
+    margin: 0;
+    padding: 0;
+}
+.main .calendar .calendarHeader ul.date img{
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.main .calendar .calendarHeader li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.main .calendar .calendarHeader h3{
+    font-size: 23px;
+    font-weight: 400;
+    margin: 10px 37px 0px 52px;
+}
+.main .calendar .calendarBody table{
+    font-size: 0;
+    transform: translateY(-1px);
+}
+.main .calendar .calendarBody table tr{
+    display: grid;
+    grid-template-columns: repeat(7, 191px);
+    margin: 0;
+    width: 1340px;
+    font-size: 14px;
+    border: 1px solid #eaebf0;
+    border-top: none;
+}
+.main .calendar .calendarBody table .first{
+    position: relative;
+}
+.main .calendar .calendarBody table .second{
+    position: relative;
+}
+.main .calendar .calendarBody table .third{
+    position: relative;
+}
+.main .calendar .calendarBody table .fourth{
+    position: relative;
+}
+.main .calendar .calendarBody table .fifth{
+    position: relative;
+}
+.main .calendar .calendarBody table .second .secodment{
+    grid-column: 6/-1;
+    position: absolute;
+    padding: 0;
+    margin-top: 25px;
+    height: 30px;
+    border: none;
+}
+.main .calendar .calendarBody table .fourth .vocation{
+    grid-column: 3/6;
+    position: absolute;
+    padding: 0;
+    margin-top: 25px;
+    height: 30px;
+    border: none;
+}
+.main .calendar .calendarBody table .second .secodment h4{
+    margin: 60px 0px 0px 18px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: linear-gradient(to right, #ffe53b 0%, #fc2a2f 100%);
+    width: 320px;
+    border-radius: 15px;
+    color: #fff;
+    position: relative;
+}
+.main .calendar .calendarBody table .second .secodment h4 img{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.main .calendar .calendarBody table .fourth .vocation h4{
+    margin: 60px 0px 0px 18px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: linear-gradient(to right, #ffe53b 0%, #fc2a2f 100%);
+    width: 520px;
+    border-radius: 15px;
+    color: #fff;
+}
+.main .calendar .calendarBody table .second .secodment:hover{
+    background-color:transparent;
+    box-shadow: none;
+}
+.main .calendar .calendarBody table .fourth .vocation:hover{
+    background-color:transparent;
+    box-shadow: none;
+}
+.main .calendar .calendarBody table tr th{
+    border-right: 1px solid #eaebf0;
+    padding: 8px 0px 0px 30px;
+    height: 37px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #506584;
+    text-align: left;
+
+}
+.main .calendar .calendarBody table tr th:last-of-type{
+    border-right: none;
+}
+.main .calendar .calendarBody table tr td{
+    border-right: 1px solid #eaebf0;
+    height: 130px;
+    transition: 0.3s;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    font-size: 23px;
+    display: grid;
+    grid-template-columns: 30px 120px;
+}
+.main .calendar .calendarBody table tr td:last-of-type{
+    border-right: none;
+}
+.main .calendar .calendarBody table tr td:hover{
+    background-color: #fff;
+    box-shadow: 0 2px 73px #ccccdc;
+}
+.main .calendar .calendarBody table tr td p{
+    padding: 0;
+    margin: 0;
+}
+.main .calendar .calendarBody table tr td h4{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 0px 0px 5px;
+}
+.main .calendar .calendarBody table .second td:nth-child(3){
+    border-left: 1px solid #ff8484;
+}
+.inactive{
+    color: #c5c5da;
+}
+.feast {
+    color: #f3333e;
+    border: 1px solid #ff8484;
+}
+td.selected{
+    background-color: #ececf6;
+    box-shadow: none;
+}
+td.selected .number {
+    font-size: 32px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.event ul{
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    height: 20px;
+}
+.event li{
+    display: inline-block;
+    font-size: 14px;
+    color: #576b8a;
+}
+.event li h6{
+    font-size: 14px;
+    margin: 0;
+    color: #576b8a;
+    font-weight: 400;
+}
+.second .event ul:nth-child(2), 
+.second .event ul:nth-child(3) {
+    margin-left: 20px;
+}
+.third .event ul:nth-child(2), 
+.third .event ul:nth-child(4) {
+    margin-left: 20px;
+}
+.fourth .event ul:nth-child(2) {
+    margin-left: 20px;
+}
+.fifth .event ul:nth-child(2) {
+    margin-left: 20px;
+}
+.activityScroll{
+    height: 900px;
+    width: 345px;
+    background: linear-gradient(180deg, #ededf6 0%, #f8f9fb 100%);
+    border: 1px solid #eaebf0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.activityScroll h3{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.activityScroll .searchBox{
+    background-color: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 26px;
+}
+.activityScroll input{
+    width: 90%;
+    padding: 10px 10px 5px;
+    box-sizing: border-box;
+    border: none;
+}
+.activityScroll input::placeholder{
+    color: #b5bec8;
+    font-size: 14px;
+}
+.activityScroll .top, 
+.activityScroll .bottom{
+    display: grid;
+    grid-template-columns: 35px 270px;
+}
+.activityScroll .top .left{
+    margin-right: 10px;
+    position: relative;
+    height: 35px;
+    cursor: pointer;
+}
+.activityScroll .top .left .connection{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+}
+.activityScroll .top .right li {
+    display: inline-block;
+    color: #afbdd2;
+}
+.activityScroll .top .right {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.activityScroll .top .right h4{
+    color: #000;
+    margin-bottom: 3px;
+}
+.activityScroll .top .right h6 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 3px;
+}
+.activityScroll .top .right ul{
+    margin-bottom: 11px;
+}
+.activityScroll .day{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.activityScroll .bottom .left{
+    margin-right: 10px;
+    position: relative;
+    height: 35px;
+    cursor: pointer;
+}
+.activityScroll .bottom .left .connection{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+}
+.activityScroll .bottom .right li {
+    display: inline-block;
+    color: #afbdd2;
+}
+.activityScroll .bottom .right {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.activityScroll .bottom .right h4{
+    color: #000;
+    margin-bottom: 3px;
+}
+.activityScroll .bottom .right h6 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 3px;
+}
+.activityScroll .bottom .right ul{
+    margin-bottom: 11px;
+}
